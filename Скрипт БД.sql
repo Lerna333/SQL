@@ -13,3 +13,7 @@ add price varchar (20);
 
 
 
+alter table Product
+add type varchar(20)
+alter table Product
+add type varchar(20);
