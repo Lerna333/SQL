@@ -17,3 +17,6 @@ alter table Product
 add type varchar(20)
 alter table Product
 add type varchar(20);
+
+ALTER TABLE Product    
+ADD speed varchar(20);
