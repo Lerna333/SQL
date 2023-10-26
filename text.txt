@@ -1,1 +1,27 @@
-sssss
+Найдите все ошибки
+
+CREATE TABLE authors (
+    a_id       INTEGER,
+    a_name     CHAR 
+--  WARNING: CHAR size not specified 
+     NOT NULL,
+    books_b_id INTEGER NOT NULL
+);
+
+ALTER TABLE authors ADD CONSTRAINT authors_pk PRIMARY KEY ( a_name );
+
+CREATE TABLE books (
+    b_id       INTEGER NOT NULL,
+    b_name     LONG,
+    b_year     FLOAT(4),
+    b_quantity INTEGER
+);
+
+COMMENT ON COLUMN books.b_name IS
+    'Book name';
+
+ALTER TABLE books ADD CONSTRAINT books_pk PRIMARY KEY ( b_id );
+
+ALTER TABLE authors
+    ADD CONSTRAINT authors_books_fk FOREIGN KEY ( books_b_id )
+        REFERENCES books ( b_id );
