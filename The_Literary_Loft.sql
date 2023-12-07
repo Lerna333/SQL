@@ -9,3 +9,13 @@ create table books (
     year_published int,
     release_date int
 );
+
+//Создать таблицу Sales для БД "The Literary Loft"
+create table Sales(
+ sale_id int,
+ book_id int,
+ user_id int,
+ sale_date timestamp,
+ price int,
+ quantity int
+);
