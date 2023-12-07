@@ -2,12 +2,12 @@
 
 // Создать таблицу books для БД "The Literary Loft"
 create table books (
-	book_id int NOT NULL PRIMARY KEY,
+	book_id serial primary key,
 	title char(50),
-    author_id int,
-    genre_id int,
-    year_published int,
-    release_date int
+    author_id int not null,
+    genre_id int not null,
+    year_published date,
+    release_date date
 );
 
 //Создать таблицу Sales для БД "The Literary Loft"
