@@ -25,7 +25,7 @@ INSERT INTO shops(shops_id,shope_name,location)VALUES
 
 -- Создать таблицу authors
 CREATE TABLE authors(
-author_id FLOAT PRIMARY KEY AUTO_INCREMENT,
+author_id INT PRIMARY KEY AUTO_INCREMENT,
 author_name CHARACTER(30),
 author_country CHARACTER(20),
 );
