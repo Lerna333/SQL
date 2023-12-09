@@ -50,6 +50,7 @@ shope_name CHARACTER(50) NOT NULL,
 location CHARACTER(100)NOT NULL,
 );
 
+-- Наполнить таблицу shops
 INSERT INTO shops(shops_id,shope_name,location)VALUES
 (1,'MegaMart','Central Shopping District, New York, USA'),
 (2,'HyperMarket24','Moscow Highway, Moscow, Russia'),
