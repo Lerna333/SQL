@@ -117,3 +117,10 @@ values  (user_id, 1, '2022-05-01 20:00:01', 1500, 3),
         (user_id, 5, '2023-07-15 15:00:24', 1800, 4),
         (user_id, 17, '2023-11-20 17:20:54', 1950, 2),
         (user_id, 18, '2023-10-10 10:40:15', 2500, 1);
+
+//Создать таблицу users для БД "The Literary Loft"	
+create table users1 (
+user_id  serial PRIMARY KEY,
+username varchar(20),
+email varchar(20),
+password varchar(20));
