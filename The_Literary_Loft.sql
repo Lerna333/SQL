@@ -93,3 +93,27 @@ INSERT INTO authors (author_id, author_name, author_country) VALUES
 (13,'Fatima Khan','India'),
 (14,'Pierre Dubois','France'),
 (15,'Sven Eriksson','Sweden');
+
+
+// Создать таблицу users для БД "The Literary Loft"
+create table sales (
+	sale_id serial primary key,
+	user_id int,
+    foreign key (user_id) references users (user_id),
+    book_id int,
+    foreign key (book_id) references books(book_id),
+    sale_date timestamp,
+    price int,
+    quantity int
+);
+
+// Наполнить таблицу sales
+insert into sales (user_id, book_id, sale_date, price, quantity) 
+values  (user_id, 1, '2022-05-01 20:00:01', 1500, 3), 
+        (user_id, 2, '2022-05-01 20:02:01', 1500, 3),
+        (user_id, 3, '2022-05-01 20:05:01', 1500, 2),
+        (user_id, 4, '2022-05-01 20:07:01', 1500, 1),
+        (user_id, 5, '2023-12-21 14:30:51', 2000, 2),
+        (user_id, 5, '2023-07-15 15:00:24', 1800, 4),
+        (user_id, 17, '2023-11-20 17:20:54', 1950, 2),
+        (user_id, 18, '2023-10-10 10:40:15', 2500, 1);
