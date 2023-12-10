@@ -119,8 +119,32 @@ values  (user_id, 1, '2022-05-01 20:00:01', 1500, 3),
         (user_id, 18, '2023-10-10 10:40:15', 2500, 1);
 
 //Создать таблицу users для БД "The Literary Loft"	
-create table users1 (
+create table users (
 user_id  serial PRIMARY KEY,
 username varchar(20),
 email varchar(20),
 password varchar(20));
+
+//Hаполнить таблицу users
+
+insert into users1 (username, email, password)
+values ('Ola', 'ola@email.com', 'past123'),
+('Bob', 'bob@email.com', 'securePwd'),
+('Charlie', 'charlie@email.com', 'qwerty456'),
+('David', 'david@email.com', 'p@ssword'),
+('Eva', 'eva@email.com', '123abc'),
+('Frank', 'frank@email.com', 'letmein'),
+('Grace', 'grace@email.com', 'pass321'),
+('Henry', 'henry@email.com', 'sunshine'),
+('Ivy', 'ivy@email.com', 'iloveyou'),
+('Jack', 'jack@email.com', 'password123'),
+('Kate', 'kate@email.com', 'katePwd'),
+('Leo', 'leo@email.com', '1234abcd'),
+('Mia', 'mia@email.com', 'mypass'),
+('Noah', 'noah@email.com', 'noah123'),
+('Olivia', 'olivia@email.com', 'oliviaPwd'),
+('Peter', 'peter@email.com', 'peterpass'),
+('Quinn', 'quinn@email.com', 'qpass'),
+('Rose', 'rose@email.com', 'rose123'),
+('Sam', 'sam@email.com', 'samPwd'),
+('Tina', 'tina@email.com', 'tinapass');
