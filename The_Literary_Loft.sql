@@ -34,7 +34,8 @@ values  ('War & Peace Volume 1', 1, 1, '1869-05-12'),
         ('The Queen of Spades', 10, 2, '1834-03-25'), 
         ('The Tale of the Fisherman and the Fish', 10, 4, '1834-10-07');
 
-//Создать таблицу Sales для БД "The Literary Loft"
+//Создать таблицу Sales для БД "The Literary Loft" 
+// @zarina_nz: удалить строки по этой таблице Sales. Ниже создается таблица Sales с верными данными
 create table Sales(
  sale_id int,
  book_id int,
@@ -99,9 +100,9 @@ INSERT INTO authors (author_id, author_name, author_country) VALUES
 create table sales (
 	sale_id serial primary key,
 	user_id int,
-    foreign key (user_id) references users (user_id),
+    foreign key (user_id) references users (user_id), // @zarina_nz: удалить строку
     book_id int,
-    foreign key (book_id) references books(book_id),
+    foreign key (book_id) references books(book_id), // @zarina_nz: удалить строку
     sale_date timestamp,
     price int,
     quantity int
